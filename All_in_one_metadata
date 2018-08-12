@@ -131,4 +131,93 @@ fig = plt.figure(figsize = (12,9))
 sns.heatmap(cor_mat, vmax = .8, square = True)
 
 ** this part of the code gives us the co-relation matrix between the dataset.
-Also 
+Also the "seaborn" package that we imported earlier will plot a  " heatmap ". This technique of data visualisation helps one understand the behaviour of data
+with several other factors. (understanding the heatmap isn't that easy so try and spend some time reading about it)
+
+
+Step-8
+
+#get all the columns from the dataframe.....
+columns = data.columns.tolist()
+
+
+#lets filter the columns to remove data we don't want .. in short lets clean the shit up #Swatch_Bharat_Abhiyan
+columns = [ c for c in columns if c  not in ["Class"] ]
+
+# the predection varibale 
+
+Steve = "Class"
+
+A = data[columns]
+B = data[Steve]
+
+print(A.shape)
+print(B.shape)
+                Shift + enter is mandatory...
+** Here the only thing to pay attention on is the for loop. I've defined a class named steve which will be our prediction variable
+rest everything is basic python syntax.This wil return our dataset structure but without the top row b'cuz we dont need it anymore.
+
+from sklearn.matrics import classification_report,accuracy_score
+from sklern.ensemble import IsolationForest
+from sklearn.neighbours import LocalOutlierFactor
+9
+
+Step-8
+#lets define a random state...
+state = 1
+
+# finally the main part:- outlier detection methods....
+classifiers = {
+    "Isolation Forest": IsolationForest(max_samples=len(A),
+                                      contamination = outlier_fraction,
+                                       random_state= state)
+     "Local Outlier Factor": LocalOutlierFactor(
+     n_neighbours= 30,
+     contamination = outlier_fraction)                                 
+}
+
+** here we're using a Machine learning algorithm " isolation forest", one can use other algorithm as well if that works well for larger data sets.
+Machine Learning is all about selection of the right algorithm to produce results in the fastest time.
+Also contamination here is for the fraud cases that will be encountered in the processing of the dataset by isolation forest.(works similar to KNN,
+BUT I ON A PERSONAL NOTE LIKE ISOLATION FOREST cuz its not mainstream :-) )
+
+
+Step-10
+
+#final task(maybe)..........
+n_outliers = len(Fraud)
+
+for i, (clf_name, clf) in enumerate(classifiers.items()):
+    
+#set and fit the data & mark outliers...
+    
+        if clf_name == "Local Outlier Factor":
+            a_pred= clf.fit_predict(A)
+            scores_pred= clf.negative_outlier_factor_
+            
+        else:
+            clf.fit = (A)
+            scores_pred= clf.decision_function(A)
+            a_pred= clf.predict(A)
+        
+        
+#reshaping the prediction values , 0 for valid and 1 for Fraud.....
+
+        a_pred[a_pred == 1]== 0
+        a_pred[a_pred == -1]== 1
+        
+        n_errors = (a_pred != A).sum()
+        
+        #Run the classifier matrices
+        
+        print('{}: {}'.format(clf_name,n_errors))
+        print(accuracy_score(A,a_pred))
+        print(classification_report(A,a_pred))
+        
+ **Lets not describe this code segment at the moment hit shift+ enter and explore the outcome.
+#AvanIsHere 
+
+
+
+
+** Learning Credits : 
