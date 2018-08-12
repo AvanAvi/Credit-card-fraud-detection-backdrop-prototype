@@ -1,0 +1,29 @@
+// Open the jupyter notebook by typing " jupyter notebook" in the terminal.
+// A new local web window will open in your default browser.
+//select the folder which contains the dataset "creditcard.csv".
+//Go to the top right corner and click on new >> python3.(This will create a new python3 blank notebook)  
+//Rename the file and you're all set to go....!
+                    HAPPY MACHINE LEARNING :)
+                    
+                    
+//So lets get started by installing the required dependencies.Make sure you have them on your system.
+Windows: https://youtu.be/jnpC_Ib_lbc
+
+
+
+
+import sys
+import numpy
+import pandas
+import matplotlib 
+import seaborn
+import sklearn
+import scipy
+
+print('Python :{}'.format(sys.version))
+print('Numpy :{}'.format(numpy.__version__))
+print('Pandas :{}'.format(pandas.__version__))
+print('Matplotlib :{}'.format(matplotlib._version_))
+print('Seaborn :{}'.format(seaborn.__version__))
+print('Scipy :{}'.format(scipy.__version__))
+print('Sklearn :{}'.format(sklearn.__version__))
