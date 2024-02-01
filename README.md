@@ -58,10 +58,6 @@ This will trigger the data preprocessing steps, followed by the EDA, model train
 
 Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
