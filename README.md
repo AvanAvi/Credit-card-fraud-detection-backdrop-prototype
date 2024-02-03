@@ -9,8 +9,8 @@ This repository houses the Credit Card Fraud Detection project, an advanced anal
 To clone and run this project, you'll need to have Python installed on your machine. Follow these steps to get your development environment set up:
 
 ```bash
-git clone https://github.com/yourusername/credit-card-fraud-detection.git
-cd credit-card-fraud-detection
+git clone https://github.com/AvanAvi/credit-card-fraud-detection-backdrop-prototype.git
+cd credit-card-fraud-detection-backdrop-prototype
 ```
 
 ### Prerequisites
