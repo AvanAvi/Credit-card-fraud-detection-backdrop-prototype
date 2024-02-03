@@ -4,6 +4,13 @@
 
 This repository houses the Credit Card Fraud Detection project, an advanced analytical tool designed to identify and prevent fraudulent transactions in credit card data. Utilizing state-of-the-art machine learning algorithms, this project aims to enhance security measures by accurately distinguishing between legitimate and fraudulent activities.
 
+![Python Version](https://img.shields.io/badge/python-3.x-blue.svg)
+![Issues](https://img.shields.io/github/issues/AvanAvi/Credit-card-fraud-detection-backdrop-prototype)
+![Forks](https://img.shields.io/github/forks/AvanAvi/Credit-card-fraud-detection-backdrop-prototype)
+![Stars](https://img.shields.io/github/stars/AvanAvi/Credit-card-fraud-detection-backdrop-prototype)
+![Code Size](https://img.shields.io/github/languages/code-size/AvanAvi/Credit-card-fraud-detection-backdrop-prototype.svg)
+
+
 ## Getting Started
 
 To clone and run this project, you'll need to have Python installed on your machine. Follow these steps to get your development environment set up:
