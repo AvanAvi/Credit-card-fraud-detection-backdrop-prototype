@@ -59,9 +59,6 @@ python fraud_detection.py
 
 This will trigger the data preprocessing steps, followed by the EDA, model training, and evaluation phases, outputting the performance metrics of the models.
 
-## Contributing
-
-Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 ## Acknowledgments
 
